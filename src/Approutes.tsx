@@ -5,6 +5,7 @@ import AuthCallbackPage from "./pages/AuthCallbackPage"
 import UserProfilePage from "./pages/UserProfilePage"
 import ProtectedRoutes from "./auth/ProtectedRoutes"
 import ManageRestaurantPage from "./pages/ManageRestaurantPage"
+import SearchPage from "./pages/SearchPage"
 
 
 
@@ -19,6 +20,7 @@ return(
 <Route path="*" element={<Navigate to="/"/>}/>
 <Route path="/auth-callback" element={<AuthCallbackPage/>}/>
 <Route path="/manage-restaurant" element={<Layout><ManageRestaurantPage /></Layout>}/>
+<Route path="/search/:city" element={<Layout showHero={false}><SearchPage/></Layout>}/>
 </Routes>
 
 
