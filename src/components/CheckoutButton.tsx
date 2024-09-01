@@ -2,8 +2,8 @@ import { useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useAuth0 } from "@auth0/auth0-react";
 import { LoadingButton } from "./LoadingButton";
-import { Dialog, DialogDescription } from "@radix-ui/react-dialog";
-import { DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
+import { Dialog} from "@radix-ui/react-dialog";
+import { DialogContent, DialogTrigger } from "./ui/dialog";
 import UserProfileForm, { UserFormData } from "@/forms/user-profile-form/UserProfileForm";
 import { useGetMyUser } from "@/api/MyUserApi";
 
