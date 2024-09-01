@@ -84,20 +84,13 @@ return (
 <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-5">
     <div id="cuisines-List" className="flex flex-col ">
 <CuisineFilter isExpanded={isExpanded}  onChange={setSelectedCuisines} onExpandedClick={()=>setIsExpanded((prevIsExpanded) => !prevIsExpanded)} selectedCuisines={searchState.selectedCuisines}/>
-
     </div>
-
-
-  <div id="main-content" className="flex flex-col gap-5">
+<div id="main-content" className="flex flex-col gap-5">
   <SearchBar onSubmit={setSearchQuery} placeHolder="Search by cuisine" onReset={resetSearch} searchQuery={searchState.searchQuery}/>
-
 <div className="flex justify-between flex-col gap-3 lg:flex-row">
 <SearchResultInfo total={data.pagination.total} city={city}/>
 <SortOptionDropdown sortOption={searchState.sortOption} onChange={(value) =>setsortOption(value)}/>
-
 </div>
-
-
 {data.data.map((restaurant) =>(
 <SearchResultCard restaurant={restaurant}/>
 ))}
@@ -105,11 +98,6 @@ return (
   </div>
 
     </div>
-
-
-
-
-    
 )
 }
 export default SearchPage;

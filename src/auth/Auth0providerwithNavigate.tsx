@@ -1,4 +1,4 @@
-import {Auth0Provider } from "@auth0/auth0-react";
+import {AppState, Auth0Provider } from "@auth0/auth0-react";
 import { useNavigate } from "react-router-dom";
 
 type Props={
@@ -17,10 +17,10 @@ if(!domain || !clientId || !redirectUri || !audience ){
 }
 //user:current logged in user,appstate contains stored data that we might need when the user gets redirrected
 //when the user gets redirrected back after authentication
-const onRedirectCallback=()=>{
+const onRedirectCallback=(appState?:AppState)=>{
 
   
-  navigate("/auth-callback"); 
+  navigate(appState?.returnTo || "/auth-callback"); 
 
 }
 
