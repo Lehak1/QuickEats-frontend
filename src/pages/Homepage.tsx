@@ -12,7 +12,7 @@ navigate(`/search/${searchFormValues.searchQuery}`)
     <div className="flex flex-col gap-12">
         <div className="bg-white flex flex-col justify-between py-5 items-center gap-5 shadow-md -my-14 text-center">
             <h1 className="text-4xl font-bold tracking-tight text-orange-600">Tuck into a takeaway today</h1>
-            <span className="text-xl">Food is just a click away!</span>
+            <span className="text-xl">Delicious meals are just a click away! We currently offer delivery in Bristol, Cambridge, Manchester and London</span>
 <SearchBar placeHolder="search by location" onSubmit={handleSearchSubmit} />
 
         </div>
