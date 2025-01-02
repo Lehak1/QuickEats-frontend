@@ -32,7 +32,7 @@ const{data,isLoading} =useSearchRestaurants(searchState,city);
 // const handleSubmit=()=>{
 // }
 if(isLoading){
-    <span>Loading ...</span>
+    return <span>Loading ...</span>
 }
 if(!data?.data || !city){
     return <span>No results found</span>

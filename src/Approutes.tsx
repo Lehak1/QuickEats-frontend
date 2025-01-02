@@ -9,8 +9,6 @@ import SearchPage from "./pages/SearchPage"
 import DetailsPage from "./pages/DetailsPage"
 import OrderStatusPage from "./pages/OrderStatusPage"
 
-
-
 const Approutes = () =>{
 return(
 <Routes>
@@ -30,7 +28,6 @@ return(
 <Route path="/detail/:restaurantId" element={<Layout showHero={false}><DetailsPage/></Layout>}/>
 
 </Routes>
-
 
 )
 
